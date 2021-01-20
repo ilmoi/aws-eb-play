@@ -4,6 +4,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $message = file_get_contents('php://input');
   file_put_contents($file, @date('Y-m-d H:i:s') . " Received message: " . $message . "\n", FILE_APPEND);
 } else {
+
+echo "printing to console from php!! holy cow!!!"
+echo 'Normal variable is: ' .$_ENV["wow_normal"] . '!';
+echo 'Secure variable is: ' .$_ENV["wow_secure"] . '!';
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -53,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     text-align: right;
     padding-top: 11em;
-    background-color: #e047ff;
+    background-color: purple;
   }
   .textColumn p {
     width: 75%;
@@ -65,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     right: 0px;
     bottom: 0px;
     left: 50%;
-    background-color: #A9A9A9;
+    background-color: green;
   }
 
   h1 {
