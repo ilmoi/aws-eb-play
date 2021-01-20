@@ -95,9 +95,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="textColumn">
     <h1>Congratulations!</h1>
     <h2>Can do what I want!</h2>
-    <h2>Internal var is <?php echo .$_ENV["wow_internal"]; ?></h2>
-    <h2>Normal var is <?php echo .$_ENV["wow_normal"]; ?></h2>
-    <h2>Secure var is <?php echo .$_ENV["wow_secure"]; ?></h2>
+    <h2>Internal var is <?php echo $_ENV["wow_internal"]; ?></h2>
+    <h2>Normal var is <?php echo $_ENV["wow_normal"]; ?></h2>
+    <h2>Secure var is <?php echo $_ENV["wow_secure"]; ?></h2>
     <p>Your Docker Container is now running in Elastic Beanstalk on your own dedicated environment in the AWS Cloud.</p>
   </div>
   
